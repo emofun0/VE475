@@ -1,0 +1,6 @@
+$ mkdir -p "/home/yipeng/Codes/475/h1/target/debug/build/az-338eb606966e0f80/out/try_track_caller"
+$ cd "/home/yipeng/Codes/475/h1/target/debug/build/az-338eb606966e0f80/out/try_track_caller"
+$ printf '%s' "// try_tra"... > "/home/yipeng/Codes/475/h1/target/debug/build/az-338eb606966e0f80/out/try_track_caller/try_track_caller.rs"
+$ cd "/home/yipeng/Codes/475/h1/target/debug/build/az-338eb606966e0f80/out/try_track_caller" && "/home/yipeng/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustc" "try_track_caller.rs" "--emit=dep-info,metadata" >& /dev/null
+cargo:rustc-cfg=track_caller
+$ rm -r "/home/yipeng/Codes/475/h1/target/debug/build/az-338eb606966e0f80/out/try_track_caller"

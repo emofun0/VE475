@@ -1,0 +1,22 @@
+cargo:rerun-if-env-changed=GMP_MPFR_SYS_CACHE
+$ mkdir -p "/home/yipeng/Codes/475/h1/target/debug/build/gmp-mpfr-sys-745fe5a8a998bc92/out/lib"
+$ mkdir -p "/home/yipeng/Codes/475/h1/target/debug/build/gmp-mpfr-sys-745fe5a8a998bc92/out/include"
+$ cp "/home/yipeng/.cache/gmp-mpfr-sys/1.6/x86_64-unknown-linux-gnu/1.6.5/libmpc.a" "/home/yipeng/Codes/475/h1/target/debug/build/gmp-mpfr-sys-745fe5a8a998bc92/out/lib/libmpc.a"
+$ cp "/home/yipeng/.cache/gmp-mpfr-sys/1.6/x86_64-unknown-linux-gnu/1.6.5/mpc.h" "/home/yipeng/Codes/475/h1/target/debug/build/gmp-mpfr-sys-745fe5a8a998bc92/out/include/mpc.h"
+$ cp "/home/yipeng/.cache/gmp-mpfr-sys/1.6/x86_64-unknown-linux-gnu/1.6.5/libmpfr.a" "/home/yipeng/Codes/475/h1/target/debug/build/gmp-mpfr-sys-745fe5a8a998bc92/out/lib/libmpfr.a"
+$ cp "/home/yipeng/.cache/gmp-mpfr-sys/1.6/x86_64-unknown-linux-gnu/1.6.5/mpfr.h" "/home/yipeng/Codes/475/h1/target/debug/build/gmp-mpfr-sys-745fe5a8a998bc92/out/include/mpfr.h"
+$ cp "/home/yipeng/.cache/gmp-mpfr-sys/1.6/x86_64-unknown-linux-gnu/1.6.5/libgmp.a" "/home/yipeng/Codes/475/h1/target/debug/build/gmp-mpfr-sys-745fe5a8a998bc92/out/lib/libgmp.a"
+cargo:limb_bits=64
+cargo:rustc-check-cfg=cfg(nails)
+cargo:rustc-check-cfg=cfg(long_long_limb)
+$ cp "/home/yipeng/.cache/gmp-mpfr-sys/1.6/x86_64-unknown-linux-gnu/1.6.5/gmp.h" "/home/yipeng/Codes/475/h1/target/debug/build/gmp-mpfr-sys-745fe5a8a998bc92/out/include/gmp.h"
+cargo:limb_bits=64
+cargo:rustc-check-cfg=cfg(nails)
+cargo:rustc-check-cfg=cfg(long_long_limb)
+cargo:out_dir=/home/yipeng/Codes/475/h1/target/debug/build/gmp-mpfr-sys-745fe5a8a998bc92/out
+cargo:lib_dir=/home/yipeng/Codes/475/h1/target/debug/build/gmp-mpfr-sys-745fe5a8a998bc92/out/lib
+cargo:include_dir=/home/yipeng/Codes/475/h1/target/debug/build/gmp-mpfr-sys-745fe5a8a998bc92/out/include
+cargo:rustc-link-search=native=/home/yipeng/Codes/475/h1/target/debug/build/gmp-mpfr-sys-745fe5a8a998bc92/out/lib
+cargo:rustc-link-lib=static=mpc
+cargo:rustc-link-lib=static=mpfr
+cargo:rustc-link-lib=static=gmp
